@@ -144,4 +144,8 @@
 	</build>
 	<url>https://github.com/awltech/eclipse-optimus/wiki</url>
 
+	<modules>
+		<module>com.worldline.jbatch.designer.feature</module>
+		<module>com.worldline.jbatch.designer.repository</module>
+	</modules>
 </project>

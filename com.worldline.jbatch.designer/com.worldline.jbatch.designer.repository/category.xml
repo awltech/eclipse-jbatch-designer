@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.worldline.jbatch.designer.feature_0.0.1.qualifier.jar" id="com.worldline.jbatch.designer.feature" version="0.0.1.qualifier">
+      <category name="JBatch Designer"/>
+   </feature>
+   <category-def name="JBatch Designer" label="JBatch Designer"/>
+</site>
