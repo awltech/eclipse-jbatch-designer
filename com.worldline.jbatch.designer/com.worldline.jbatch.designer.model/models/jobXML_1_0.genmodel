@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/com.worldline.jbatch.designer.model/src/main/java"
+    editDirectory="/com.worldline.jbatch.designer.model.edit/src/main/java" editorDirectory="/com.worldline.jbatch.designer.model.editor/src/main/java"
+    modelPluginID="com.worldline.jbatch.designer.model" modelName="JBatch" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    testsDirectory="/com.worldline.jbatch.designer.model.tests/src/main/java" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="7.0" copyrightFields="false" operationReflection="true" importOrganizing="true"
+    pluginKey="JBatch">
+  <foreignModel>jobXML_1_0.ecore</foreignModel>
+  <genPackages prefix="JBatch" basePackage="com.worldline.jbatch.designer.model" resource="XML"
+      disposableProviderFactory="true" fileExtensions="jbm" ecorePackage="jobXML_1_0.ecore#/">
+    <genDataTypes ecoreDataType="jobXML_1_0.ecore#//ArtifactRef"/>
+    <genClasses ecoreClass="jobXML_1_0.ecore#//Analyzer">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Analyzer/properties"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//Analyzer/ref"/>
+    </genClasses>
+    <genClasses ecoreClass="jobXML_1_0.ecore#//Batchlet">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Batchlet/properties"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//Batchlet/ref"/>
+    </genClasses>
+    <genClasses ecoreClass="jobXML_1_0.ecore#//CheckpointAlgorithm">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//CheckpointAlgorithm/properties"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//CheckpointAlgorithm/ref"/>
+    </genClasses>
+    <genClasses ecoreClass="jobXML_1_0.ecore#//Chunk">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Chunk/reader"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Chunk/processor"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Chunk/writer"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Chunk/checkpointAlgorithm"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Chunk/skippableExceptionClasses"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Chunk/retryableExceptionClasses"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Chunk/noRollbackExceptionClasses"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//Chunk/checkpointPolicy"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//Chunk/itemCount"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//Chunk/retryLimit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//Chunk/skipLimit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//Chunk/timeLimit"/>
+    </genClasses>
+    <genClasses ecoreClass="jobXML_1_0.ecore#//Collector">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Collector/properties"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//Collector/ref"/>
+    </genClasses>
+    <genClasses ecoreClass="jobXML_1_0.ecore#//Decision">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Decision/properties"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//Decision/transitionElements"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Decision/end"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Decision/fail"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Decision/next"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Decision/stop"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//Decision/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//Decision/ref"/>
+    </genClasses>
+    <genClasses ecoreClass="jobXML_1_0.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//DocumentRoot/job"/>
+    </genClasses>
+    <genClasses ecoreClass="jobXML_1_0.ecore#//End">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//End/exitStatus"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//End/on"/>
+    </genClasses>
+    <genClasses ecoreClass="jobXML_1_0.ecore#//ExceptionClassFilter">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//ExceptionClassFilter/include"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//ExceptionClassFilter/exclude"/>
+    </genClasses>
+    <genClasses ecoreClass="jobXML_1_0.ecore#//ExcludeType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//ExcludeType/class"/>
+    </genClasses>
+    <genClasses ecoreClass="jobXML_1_0.ecore#//Fail">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//Fail/exitStatus"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//Fail/on"/>
+    </genClasses>
+    <genClasses ecoreClass="jobXML_1_0.ecore#//Flow">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//Flow/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Flow/decision"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Flow/flow"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Flow/split"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Flow/step"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//Flow/transitionElements"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Flow/end"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Flow/fail"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Flow/next"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Flow/stop"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//Flow/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//Flow/next1"/>
+    </genClasses>
+    <genClasses ecoreClass="jobXML_1_0.ecore#//IncludeType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//IncludeType/class"/>
+    </genClasses>
+    <genClasses ecoreClass="jobXML_1_0.ecore#//ItemProcessor">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//ItemProcessor/properties"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//ItemProcessor/ref"/>
+    </genClasses>
+    <genClasses ecoreClass="jobXML_1_0.ecore#//ItemReader">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//ItemReader/properties"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//ItemReader/ref"/>
+    </genClasses>
+    <genClasses ecoreClass="jobXML_1_0.ecore#//ItemWriter">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//ItemWriter/properties"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//ItemWriter/ref"/>
+    </genClasses>
+    <genClasses ecoreClass="jobXML_1_0.ecore#//Job">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Job/properties"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Job/listeners"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//Job/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Job/decision"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Job/flow"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Job/split"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Job/step"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//Job/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//Job/restartable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//Job/version"/>
+    </genClasses>
+    <genClasses ecoreClass="jobXML_1_0.ecore#//Listener">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Listener/properties"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//Listener/ref"/>
+    </genClasses>
+    <genClasses ecoreClass="jobXML_1_0.ecore#//Listeners">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Listeners/listener"/>
+    </genClasses>
+    <genClasses ecoreClass="jobXML_1_0.ecore#//Next">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//Next/on"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//Next/to"/>
+    </genClasses>
+    <genClasses ecoreClass="jobXML_1_0.ecore#//Partition">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Partition/mapper"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Partition/plan"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Partition/collector"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Partition/analyzer"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Partition/reducer"/>
+    </genClasses>
+    <genClasses ecoreClass="jobXML_1_0.ecore#//PartitionMapper">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//PartitionMapper/properties"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//PartitionMapper/ref"/>
+    </genClasses>
+    <genClasses ecoreClass="jobXML_1_0.ecore#//PartitionPlan">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//PartitionPlan/properties"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//PartitionPlan/partitions"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//PartitionPlan/threads"/>
+    </genClasses>
+    <genClasses ecoreClass="jobXML_1_0.ecore#//PartitionReducer">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//PartitionReducer/properties"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//PartitionReducer/ref"/>
+    </genClasses>
+    <genClasses ecoreClass="jobXML_1_0.ecore#//Properties">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Properties/property"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//Properties/partition"/>
+    </genClasses>
+    <genClasses ecoreClass="jobXML_1_0.ecore#//Property">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//Property/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//Property/value"/>
+    </genClasses>
+    <genClasses ecoreClass="jobXML_1_0.ecore#//Split">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Split/flow"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//Split/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//Split/next"/>
+    </genClasses>
+    <genClasses ecoreClass="jobXML_1_0.ecore#//Step">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Step/properties"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Step/listeners"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Step/batchlet"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Step/chunk"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Step/partition"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//Step/transitionElements"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Step/end"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Step/fail"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Step/next"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference jobXML_1_0.ecore#//Step/stop"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//Step/allowStartIfComplete"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//Step/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//Step/next1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//Step/startLimit"/>
+    </genClasses>
+    <genClasses ecoreClass="jobXML_1_0.ecore#//Stop">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//Stop/exitStatus"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//Stop/on"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute jobXML_1_0.ecore#//Stop/restart"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xsd2ecore:XSD2EcoreMappingRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsd2ecore="http://www.eclipse.org/emf/2002/XSD2Ecore" inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#/"
+    outputs="jobXML_1_0.ecore#/" topToBottom="true">
+  <nested inputs="bundleentry://860.fwk21714931/cache/www.w3.org/2001/XMLSchema.xsd#//string;XSDSimpleTypeDefinition=9"
+      outputs="http://www.eclipse.org/emf/2003/XMLType#//String"/>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Property;XSDComplexTypeDefinition=17"
+      outputs="jobXML_1_0.ecore#//Property">
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Property;XSDComplexTypeDefinition=17/XSDAttributeUse"
+        outputs="jobXML_1_0.ecore#//Property/name"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Property;XSDComplexTypeDefinition=17/XSDAttributeUse=1"
+        outputs="jobXML_1_0.ecore#//Property/value"/>
+  </nested>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Properties;XSDComplexTypeDefinition=18"
+      outputs="jobXML_1_0.ecore#//Properties">
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Properties;XSDComplexTypeDefinition=18/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="jobXML_1_0.ecore#//Properties/property"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Properties;XSDComplexTypeDefinition=18/XSDAttributeUse"
+        outputs="jobXML_1_0.ecore#//Properties/partition"/>
+  </nested>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//artifactRef;XSDSimpleTypeDefinition"
+      outputs="jobXML_1_0.ecore#//ArtifactRef"/>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Listener;XSDComplexTypeDefinition=1"
+      outputs="jobXML_1_0.ecore#//Listener">
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Listener;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="jobXML_1_0.ecore#//Listener/properties"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Listener;XSDComplexTypeDefinition=1/XSDAttributeUse"
+        outputs="jobXML_1_0.ecore#//Listener/ref"/>
+  </nested>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Listeners;XSDComplexTypeDefinition=19"
+      outputs="jobXML_1_0.ecore#//Listeners">
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Listeners;XSDComplexTypeDefinition=19/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="jobXML_1_0.ecore#//Listeners/listener"/>
+  </nested>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//TerminatingAttributes;XSDAttributeGroupDefinition/XSDAttributeUse=1"
+      outputs="jobXML_1_0.ecore#//End/exitStatus"/>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//TerminatingAttributes;XSDAttributeGroupDefinition/XSDAttributeUse"
+      outputs="jobXML_1_0.ecore#//End/on"/>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//End;XSDComplexTypeDefinition=6"
+      outputs="jobXML_1_0.ecore#//End"/>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//TransitionElements;XSDModelGroupDefinition/XSDModelGroup/XSDParticle"
+      outputs="jobXML_1_0.ecore#//Decision/end"/>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//TerminatingAttributes;XSDAttributeGroupDefinition/XSDAttributeUse=1"
+      outputs="jobXML_1_0.ecore#//Fail/exitStatus"/>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//TerminatingAttributes;XSDAttributeGroupDefinition/XSDAttributeUse"
+      outputs="jobXML_1_0.ecore#//Fail/on"/>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Fail;XSDComplexTypeDefinition=5"
+      outputs="jobXML_1_0.ecore#//Fail"/>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//TransitionElements;XSDModelGroupDefinition/XSDModelGroup/XSDParticle=1"
+      outputs="jobXML_1_0.ecore#//Decision/fail"/>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Next;XSDComplexTypeDefinition=8"
+      outputs="jobXML_1_0.ecore#//Next">
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Next;XSDComplexTypeDefinition=8/XSDAttributeUse"
+        outputs="jobXML_1_0.ecore#//Next/on"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Next;XSDComplexTypeDefinition=8/XSDAttributeUse=1"
+        outputs="jobXML_1_0.ecore#//Next/to"/>
+  </nested>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//TransitionElements;XSDModelGroupDefinition/XSDModelGroup/XSDParticle=2"
+      outputs="jobXML_1_0.ecore#//Decision/next"/>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//TerminatingAttributes;XSDAttributeGroupDefinition/XSDAttributeUse=1"
+      outputs="jobXML_1_0.ecore#//Stop/exitStatus"/>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//TerminatingAttributes;XSDAttributeGroupDefinition/XSDAttributeUse"
+      outputs="jobXML_1_0.ecore#//Stop/on"/>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Stop;XSDComplexTypeDefinition=7"
+      outputs="jobXML_1_0.ecore#//Stop">
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Stop;XSDComplexTypeDefinition=7/XSDAttributeUse"
+        outputs="jobXML_1_0.ecore#//Stop/restart"/>
+  </nested>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//TransitionElements;XSDModelGroupDefinition/XSDModelGroup/XSDParticle=3"
+      outputs="jobXML_1_0.ecore#//Decision/stop"/>
+  <nested inputs="bundleentry://860.fwk21714931/cache/www.w3.org/2001/XMLSchema.xsd#//ID;XSDSimpleTypeDefinition=37"
+      outputs="http://www.eclipse.org/emf/2003/XMLType#//ID"/>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Decision;XSDComplexTypeDefinition=4"
+      outputs="jobXML_1_0.ecore#//Decision">
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Decision;XSDComplexTypeDefinition=4/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="jobXML_1_0.ecore#//Decision/properties"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Decision;XSDComplexTypeDefinition=4/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="jobXML_1_0.ecore#//Decision/transitionElements"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Decision;XSDComplexTypeDefinition=4/XSDAttributeUse"
+        outputs="jobXML_1_0.ecore#//Decision/id"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Decision;XSDComplexTypeDefinition=4/XSDAttributeUse=1"
+        outputs="jobXML_1_0.ecore#//Decision/ref"/>
+  </nested>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Split;XSDComplexTypeDefinition=2"
+      outputs="jobXML_1_0.ecore#//Split">
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Split;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="jobXML_1_0.ecore#//Split/flow"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Split;XSDComplexTypeDefinition=2/XSDAttributeUse"
+        outputs="jobXML_1_0.ecore#//Split/id"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Split;XSDComplexTypeDefinition=2/XSDAttributeUse=1"
+        outputs="jobXML_1_0.ecore#//Split/next"/>
+  </nested>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Batchlet;XSDComplexTypeDefinition=12"
+      outputs="jobXML_1_0.ecore#//Batchlet">
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Batchlet;XSDComplexTypeDefinition=12/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="jobXML_1_0.ecore#//Batchlet/properties"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Batchlet;XSDComplexTypeDefinition=12/XSDAttributeUse"
+        outputs="jobXML_1_0.ecore#//Batchlet/ref"/>
+  </nested>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//ItemReader;XSDComplexTypeDefinition=14"
+      outputs="jobXML_1_0.ecore#//ItemReader">
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//ItemReader;XSDComplexTypeDefinition=14/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="jobXML_1_0.ecore#//ItemReader/properties"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//ItemReader;XSDComplexTypeDefinition=14/XSDAttributeUse"
+        outputs="jobXML_1_0.ecore#//ItemReader/ref"/>
+  </nested>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//ItemProcessor;XSDComplexTypeDefinition=15"
+      outputs="jobXML_1_0.ecore#//ItemProcessor">
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//ItemProcessor;XSDComplexTypeDefinition=15/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="jobXML_1_0.ecore#//ItemProcessor/properties"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//ItemProcessor;XSDComplexTypeDefinition=15/XSDAttributeUse"
+        outputs="jobXML_1_0.ecore#//ItemProcessor/ref"/>
+  </nested>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//ItemWriter;XSDComplexTypeDefinition=16"
+      outputs="jobXML_1_0.ecore#//ItemWriter">
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//ItemWriter;XSDComplexTypeDefinition=16/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="jobXML_1_0.ecore#//ItemWriter/properties"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//ItemWriter;XSDComplexTypeDefinition=16/XSDAttributeUse"
+        outputs="jobXML_1_0.ecore#//ItemWriter/ref"/>
+  </nested>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//CheckpointAlgorithm;XSDComplexTypeDefinition=9"
+      outputs="jobXML_1_0.ecore#//CheckpointAlgorithm">
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//CheckpointAlgorithm;XSDComplexTypeDefinition=9/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="jobXML_1_0.ecore#//CheckpointAlgorithm/properties"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//CheckpointAlgorithm;XSDComplexTypeDefinition=9/XSDAttributeUse"
+        outputs="jobXML_1_0.ecore#//CheckpointAlgorithm/ref"/>
+  </nested>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//ExceptionClassFilter;XSDComplexTypeDefinition=10/XSDParticle/XSDModelGroup/XSDParticle/include;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="jobXML_1_0.ecore#//IncludeType">
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//ExceptionClassFilter;XSDComplexTypeDefinition=10/XSDParticle/XSDModelGroup/XSDParticle/include;XSDElementDeclaration/XSDComplexTypeDefinition/XSDAttributeUse"
+        outputs="jobXML_1_0.ecore#//IncludeType/class"/>
+  </nested>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//ExceptionClassFilter;XSDComplexTypeDefinition=10/XSDParticle/XSDModelGroup/XSDParticle=1/exclude;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="jobXML_1_0.ecore#//ExcludeType">
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//ExceptionClassFilter;XSDComplexTypeDefinition=10/XSDParticle/XSDModelGroup/XSDParticle=1/exclude;XSDElementDeclaration/XSDComplexTypeDefinition/XSDAttributeUse"
+        outputs="jobXML_1_0.ecore#//ExcludeType/class"/>
+  </nested>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//ExceptionClassFilter;XSDComplexTypeDefinition=10"
+      outputs="jobXML_1_0.ecore#//ExceptionClassFilter">
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//ExceptionClassFilter;XSDComplexTypeDefinition=10/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="jobXML_1_0.ecore#//ExceptionClassFilter/include"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//ExceptionClassFilter;XSDComplexTypeDefinition=10/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="jobXML_1_0.ecore#//ExceptionClassFilter/exclude"/>
+  </nested>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Chunk;XSDComplexTypeDefinition=13"
+      outputs="jobXML_1_0.ecore#//Chunk">
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Chunk;XSDComplexTypeDefinition=13/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="jobXML_1_0.ecore#//Chunk/reader"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Chunk;XSDComplexTypeDefinition=13/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="jobXML_1_0.ecore#//Chunk/processor"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Chunk;XSDComplexTypeDefinition=13/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="jobXML_1_0.ecore#//Chunk/writer"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Chunk;XSDComplexTypeDefinition=13/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="jobXML_1_0.ecore#//Chunk/checkpointAlgorithm"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Chunk;XSDComplexTypeDefinition=13/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="jobXML_1_0.ecore#//Chunk/skippableExceptionClasses"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Chunk;XSDComplexTypeDefinition=13/XSDParticle/XSDModelGroup/XSDParticle=5"
+        outputs="jobXML_1_0.ecore#//Chunk/retryableExceptionClasses"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Chunk;XSDComplexTypeDefinition=13/XSDParticle/XSDModelGroup/XSDParticle=6"
+        outputs="jobXML_1_0.ecore#//Chunk/noRollbackExceptionClasses"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Chunk;XSDComplexTypeDefinition=13/XSDAttributeUse"
+        outputs="jobXML_1_0.ecore#//Chunk/checkpointPolicy"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Chunk;XSDComplexTypeDefinition=13/XSDAttributeUse=1"
+        outputs="jobXML_1_0.ecore#//Chunk/itemCount"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Chunk;XSDComplexTypeDefinition=13/XSDAttributeUse=4"
+        outputs="jobXML_1_0.ecore#//Chunk/retryLimit"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Chunk;XSDComplexTypeDefinition=13/XSDAttributeUse=3"
+        outputs="jobXML_1_0.ecore#//Chunk/skipLimit"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Chunk;XSDComplexTypeDefinition=13/XSDAttributeUse=2"
+        outputs="jobXML_1_0.ecore#//Chunk/timeLimit"/>
+  </nested>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//PartitionMapper;XSDComplexTypeDefinition=22"
+      outputs="jobXML_1_0.ecore#//PartitionMapper">
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//PartitionMapper;XSDComplexTypeDefinition=22/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="jobXML_1_0.ecore#//PartitionMapper/properties"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//PartitionMapper;XSDComplexTypeDefinition=22/XSDAttributeUse"
+        outputs="jobXML_1_0.ecore#//PartitionMapper/ref"/>
+  </nested>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//PartitionPlan;XSDComplexTypeDefinition=21"
+      outputs="jobXML_1_0.ecore#//PartitionPlan">
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//PartitionPlan;XSDComplexTypeDefinition=21/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="jobXML_1_0.ecore#//PartitionPlan/properties"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//PartitionPlan;XSDComplexTypeDefinition=21/XSDAttributeUse"
+        outputs="jobXML_1_0.ecore#//PartitionPlan/partitions"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//PartitionPlan;XSDComplexTypeDefinition=21/XSDAttributeUse=1"
+        outputs="jobXML_1_0.ecore#//PartitionPlan/threads"/>
+  </nested>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Collector;XSDComplexTypeDefinition=23"
+      outputs="jobXML_1_0.ecore#//Collector">
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Collector;XSDComplexTypeDefinition=23/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="jobXML_1_0.ecore#//Collector/properties"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Collector;XSDComplexTypeDefinition=23/XSDAttributeUse"
+        outputs="jobXML_1_0.ecore#//Collector/ref"/>
+  </nested>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Analyzer;XSDComplexTypeDefinition=24"
+      outputs="jobXML_1_0.ecore#//Analyzer">
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Analyzer;XSDComplexTypeDefinition=24/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="jobXML_1_0.ecore#//Analyzer/properties"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Analyzer;XSDComplexTypeDefinition=24/XSDAttributeUse"
+        outputs="jobXML_1_0.ecore#//Analyzer/ref"/>
+  </nested>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//PartitionReducer;XSDComplexTypeDefinition=25"
+      outputs="jobXML_1_0.ecore#//PartitionReducer">
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//PartitionReducer;XSDComplexTypeDefinition=25/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="jobXML_1_0.ecore#//PartitionReducer/properties"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//PartitionReducer;XSDComplexTypeDefinition=25/XSDAttributeUse"
+        outputs="jobXML_1_0.ecore#//PartitionReducer/ref"/>
+  </nested>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Partition;XSDComplexTypeDefinition=20"
+      outputs="jobXML_1_0.ecore#//Partition">
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Partition;XSDComplexTypeDefinition=20/XSDParticle/XSDModelGroup/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="jobXML_1_0.ecore#//Partition/mapper"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Partition;XSDComplexTypeDefinition=20/XSDParticle/XSDModelGroup/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="jobXML_1_0.ecore#//Partition/plan"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Partition;XSDComplexTypeDefinition=20/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="jobXML_1_0.ecore#//Partition/collector"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Partition;XSDComplexTypeDefinition=20/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="jobXML_1_0.ecore#//Partition/analyzer"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Partition;XSDComplexTypeDefinition=20/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="jobXML_1_0.ecore#//Partition/reducer"/>
+  </nested>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//TransitionElements;XSDModelGroupDefinition/XSDModelGroup/XSDParticle"
+      outputs="jobXML_1_0.ecore#//Step/end"/>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//TransitionElements;XSDModelGroupDefinition/XSDModelGroup/XSDParticle=1"
+      outputs="jobXML_1_0.ecore#//Step/fail"/>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//TransitionElements;XSDModelGroupDefinition/XSDModelGroup/XSDParticle=2"
+      outputs="jobXML_1_0.ecore#//Step/next"/>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//TransitionElements;XSDModelGroupDefinition/XSDModelGroup/XSDParticle=3"
+      outputs="jobXML_1_0.ecore#//Step/stop"/>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Step;XSDComplexTypeDefinition=11"
+      outputs="jobXML_1_0.ecore#//Step">
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Step;XSDComplexTypeDefinition=11/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="jobXML_1_0.ecore#//Step/properties"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Step;XSDComplexTypeDefinition=11/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="jobXML_1_0.ecore#//Step/listeners"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Step;XSDComplexTypeDefinition=11/XSDParticle/XSDModelGroup/XSDParticle=2/XSDModelGroup/XSDParticle"
+        outputs="jobXML_1_0.ecore#//Step/batchlet"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Step;XSDComplexTypeDefinition=11/XSDParticle/XSDModelGroup/XSDParticle=2/XSDModelGroup/XSDParticle=1"
+        outputs="jobXML_1_0.ecore#//Step/chunk"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Step;XSDComplexTypeDefinition=11/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="jobXML_1_0.ecore#//Step/partition"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Step;XSDComplexTypeDefinition=11/XSDParticle/XSDModelGroup/XSDParticle=4"
+        outputs="jobXML_1_0.ecore#//Step/transitionElements"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Step;XSDComplexTypeDefinition=11/XSDAttributeUse=2"
+        outputs="jobXML_1_0.ecore#//Step/allowStartIfComplete"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Step;XSDComplexTypeDefinition=11/XSDAttributeUse"
+        outputs="jobXML_1_0.ecore#//Step/id"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Step;XSDComplexTypeDefinition=11/XSDAttributeUse=3"
+        outputs="jobXML_1_0.ecore#//Step/next1"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Step;XSDComplexTypeDefinition=11/XSDAttributeUse=1"
+        outputs="jobXML_1_0.ecore#//Step/startLimit"/>
+  </nested>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//TransitionElements;XSDModelGroupDefinition/XSDModelGroup/XSDParticle"
+      outputs="jobXML_1_0.ecore#//Flow/end"/>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//TransitionElements;XSDModelGroupDefinition/XSDModelGroup/XSDParticle=1"
+      outputs="jobXML_1_0.ecore#//Flow/fail"/>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//TransitionElements;XSDModelGroupDefinition/XSDModelGroup/XSDParticle=2"
+      outputs="jobXML_1_0.ecore#//Flow/next"/>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//TransitionElements;XSDModelGroupDefinition/XSDModelGroup/XSDParticle=3"
+      outputs="jobXML_1_0.ecore#//Flow/stop"/>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Flow;XSDComplexTypeDefinition=3"
+      outputs="jobXML_1_0.ecore#//Flow">
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Flow;XSDComplexTypeDefinition=3/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="jobXML_1_0.ecore#//Flow/group"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Flow;XSDComplexTypeDefinition=3/XSDParticle/XSDModelGroup/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="jobXML_1_0.ecore#//Flow/decision"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Flow;XSDComplexTypeDefinition=3/XSDParticle/XSDModelGroup/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="jobXML_1_0.ecore#//Flow/flow"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Flow;XSDComplexTypeDefinition=3/XSDParticle/XSDModelGroup/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="jobXML_1_0.ecore#//Flow/split"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Flow;XSDComplexTypeDefinition=3/XSDParticle/XSDModelGroup/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="jobXML_1_0.ecore#//Flow/step"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Flow;XSDComplexTypeDefinition=3/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="jobXML_1_0.ecore#//Flow/transitionElements"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Flow;XSDComplexTypeDefinition=3/XSDAttributeUse"
+        outputs="jobXML_1_0.ecore#//Flow/id"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Flow;XSDComplexTypeDefinition=3/XSDAttributeUse=1"
+        outputs="jobXML_1_0.ecore#//Flow/next1"/>
+  </nested>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Job;XSDComplexTypeDefinition"
+      outputs="jobXML_1_0.ecore#//Job">
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Job;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="jobXML_1_0.ecore#//Job/properties"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Job;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="jobXML_1_0.ecore#//Job/listeners"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Job;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="jobXML_1_0.ecore#//Job/group"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Job;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/XSDModelGroup/XSDParticle"
+        outputs="jobXML_1_0.ecore#//Job/decision"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Job;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/XSDModelGroup/XSDParticle=1"
+        outputs="jobXML_1_0.ecore#//Job/flow"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Job;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/XSDModelGroup/XSDParticle=2"
+        outputs="jobXML_1_0.ecore#//Job/split"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Job;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2/XSDModelGroup/XSDParticle=3"
+        outputs="jobXML_1_0.ecore#//Job/step"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Job;XSDComplexTypeDefinition/XSDAttributeUse=1"
+        outputs="jobXML_1_0.ecore#//Job/id"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Job;XSDComplexTypeDefinition/XSDAttributeUse=2"
+        outputs="jobXML_1_0.ecore#//Job/restartable"/>
+    <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//Job;XSDComplexTypeDefinition/XSDAttributeUse"
+        outputs="jobXML_1_0.ecore#//Job/version"/>
+  </nested>
+  <nested inputs="../../com.worldline.jbatch.designer.model/models/jobXML_1_0.xsd#//job;XSDElementDeclaration"
+      outputs="jobXML_1_0.ecore#//DocumentRoot/job"/>
+</xsd2ecore:XSD2EcoreMappingRoot>

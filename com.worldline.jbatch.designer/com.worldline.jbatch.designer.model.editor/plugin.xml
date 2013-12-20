@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated JBatch -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="com.worldline.jbatch.designer.model.jbatch.presentation.JBatchModelWizardID"
+            name="%_UI_JBatchModelWizard_label"
+            class="com.worldline.jbatch.designer.model.jbatch.presentation.JBatchModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/JBatchModelFile.gif">
+         <description>%_UI_JBatchModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated JBatch -->
+      <editor
+            id="com.worldline.jbatch.designer.model.jbatch.presentation.JBatchEditorID"
+            name="%_UI_JBatchEditor_label"
+            icon="icons/full/obj16/JBatchModelFile.gif"
+            extensions="jbm"
+            class="com.worldline.jbatch.designer.model.jbatch.presentation.JBatchEditor"
+            contributorClass="com.worldline.jbatch.designer.model.jbatch.presentation.JBatchActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

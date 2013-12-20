@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated JBatch -->
+      <package
+            uri="http://worldline.com/jbatch/designer"
+            class="com.worldline.jbatch.designer.model.jbatch.JBatchPackage"
+            genModel="models/jobXML_1_0.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated JBatch -->
+      <parser
+            type="jbm"
+            class="com.worldline.jbatch.designer.model.jbatch.util.JBatchResourceFactoryImpl"/>
+   </extension>
+
+</plugin>
