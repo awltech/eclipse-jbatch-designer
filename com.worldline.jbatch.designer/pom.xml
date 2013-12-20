@@ -147,5 +147,8 @@
 	<modules>
 		<module>com.worldline.jbatch.designer.feature</module>
 		<module>com.worldline.jbatch.designer.repository</module>
+		<module>com.worldline.jbatch.designer.model</module>
+		<module>com.worldline.jbatch.designer.model.edit</module>
+		<module>com.worldline.jbatch.designer.model.editor</module>
 	</modules>
 </project>
