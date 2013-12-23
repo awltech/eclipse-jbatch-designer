@@ -150,5 +150,6 @@
 		<module>com.worldline.jbatch.designer.model</module>
 		<module>com.worldline.jbatch.designer.model.edit</module>
 		<module>com.worldline.jbatch.designer.model.editor</module>
+		<module>com.worldline.jbatch.designer.diagram</module>
 	</modules>
 </project>
